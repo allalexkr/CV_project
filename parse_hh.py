@@ -74,3 +74,21 @@ def extract_resume_data(html):
     markdown += ", ".join(skills) if skills else "Навыки не указаны.\n"
 
     return markdown.strip()
+
+if __name__ == "__main__":
+    try:
+        job_description = "https://hh.ru/vacancy/134092538?query=python+developer&hhtmFrom=vacancy_search_list"
+        cv = "https://hh.ru/resume/a767b837000821df0d0039ed1f523031316353?query=python+developer&searchRid=1781175519906ce61006bdb453daa001&hhtmFrom=resume_search_result"
+        
+        job_html = get_html(job_description).text
+        resume_html = get_html(cv).text
+
+        job_text = extract_vacancy_data(job_html)
+        resume_text = extract_resume_data(resume_html)
+
+        prompt = f"# ВАКАНСИЯ\n{job_text}\n\n# РЕЗЮМЕ\n{resume_text}"
+        
+        print(prompt)
+
+    except Exception as e:
+        print(f"Произошла ошибка: {e}")

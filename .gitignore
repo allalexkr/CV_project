@@ -19,3 +19,4 @@ __pycache__/
 CV_project.code-workspace
 .devcontainer/devcontainer.json
 .devcontainer/
+result.md
