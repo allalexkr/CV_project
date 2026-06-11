@@ -3,6 +3,7 @@ venv/
 .venv/
 
 # Streamlit local secrets
+.streamlit/
 .streamlit/secrets.toml
 secrets.toml
 .env
@@ -17,4 +18,4 @@ __pycache__/
 .idea/
 CV_project.code-workspace
 .devcontainer/devcontainer.json
-
+.devcontainer/
