@@ -1,0 +1,18 @@
+* text=auto
+
+*.py text eol=lf
+*.html text eol=lf
+*.txt text eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.gitignore text eol=lf
+*.env_example text eol=lf
+requirements.txt text eol=lf
+
+*.sh text eol=lf
+Dockerfile text eol=lf
+*.service text eol=lf
+
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
